@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
-let status = 'offline';
+let online = "true";
 
 
 function Contact(props) {
@@ -11,9 +11,9 @@ function Contact(props) {
       <p>
         <div className="name">{props.name}</div>
         <div className="status">
-          <div className= { props.status === 'online' ? 'status-online' : 'status-offline' }>
+          <div className= { props.online === "true" ? 'status-online' : 'status-offline' }>
             </div>
-          <div className="status-text">{ props.status }
+          <div className="status-text">{ props.online === "true" ? 'online' : 'offline' }
           </div>
         </div>
       </p>

@@ -9,17 +9,17 @@ function App() {
       <Contact 
         avatar="https://randomuser.me/api/portraits/men/53.jpg"
         name="Julian Carlson"
-        status="online"
+        online="true"
       />
       <Contact 
         avatar="https://randomuser.me/api/portraits/men/79.jpg"
         name="Kyle Duncan"
-        status="offline"
+        online="false"
       />
       <Contact 
         avatar="https://randomuser.me/api/portraits/women/43.jpg"
         name="Myrtle Soto"
-        status="online"
+        online="true"
       />
     </div>
   );
