@@ -1,21 +1,18 @@
 import React from 'react';
 import './Contact.css';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 
-let online = "true";
-
-
-function Contact(props) {
+function Contact({avatar, name, online}) {
   return (
     <div className="Contact">
-      <img src={props.avatar} alt={props.avatar} className="avatar" />
+      <img src={avatar} alt={avatar} className="avatar" />
       <p>
-        <div className="name">{props.name}</div>
+        <div className="name">{name}</div>
         <div className="status">
-          <div className= { props.online === "true" ? 'status-online' : 'status-offline' }>
+          <div className= { online === true ? 'status-online' : 'status-offline' }>
             </div>
-          <div className="status-text">{ props.online === "true" ? 'online' : 'offline' }
+          <div className="status-text">{ online === true ? 'online' : 'offline' }
           </div>
         </div>
       </p>
@@ -23,7 +20,11 @@ function Contact(props) {
   );
 }
 
-
+// Contact.propTypes = {
+//   name: PropTypes.string,
+//   avatar: PropTypes.object,
+//   online: PropTypes.bool,
+// };
 
 
 export default Contact;
