@@ -1,5 +1,6 @@
 import React from 'react';
 import Contact from './Contact.js';
+// import src from '*.bmp';
 
   const Users = [
   {
